@@ -1,0 +1,217 @@
+sil_stage raw
+
+import Builtin
+import Swift
+import SwiftShims
+
+import Foundation
+
+protocol Drawing {
+  func render()
+}
+
+extension Drawing {
+  func circle()
+  func render()
+}
+
+class SVG : Drawing {
+  func circle()
+  @objc deinit
+  init()
+}
+
+// main
+sil [ossa] @main : $@convention(c) (Int32, UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>) -> Int32 {
+bb0(%0 : $Int32, %1 : $UnsafeMutablePointer<Optional<UnsafeMutablePointer<Int8>>>):
+  %2 = metatype $@thick SVG.Type                  // user: %4
+  // function_ref SVG.__allocating_init()
+  %3 = function_ref @$s4main3SVGCACycfC : $@convention(method) (@thick SVG.Type) -> @owned SVG // user: %4
+  %4 = apply %3(%2) : $@convention(method) (@thick SVG.Type) -> @owned SVG // user: %6
+  %5 = alloc_stack $SVG                           // users: %10, %9, %8, %6
+  store %4 to [init] %5 : $*SVG                   // id: %6
+  // function_ref Drawing.render()
+  %7 = function_ref @$s4main7DrawingPAAE6renderyyF : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> () // user: %8
+  %8 = apply %7<SVG>(%5) : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> ()
+  destroy_addr %5 : $*SVG                         // id: %9
+  dealloc_stack %5 : $*SVG                        // id: %10
+  %11 = integer_literal $Builtin.Int32, 0         // user: %12
+  %12 = struct $Int32 (%11 : $Builtin.Int32)      // user: %13
+  return %12 : $Int32                             // id: %13
+} // end sil function 'main'
+
+// Drawing.circle()
+sil hidden [ossa] @$s4main7DrawingPAAE6circleyyF : $@convention(method) <Self where Self : Drawing> (@in_guaranteed Self) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : $*Self):
+  debug_value_addr %0 : $*Self, let, name "self", argno 1 // id: %1
+  %2 = integer_literal $Builtin.Word, 1           // user: %4
+  // function_ref _allocateUninitializedArray<A>(_:)
+  %3 = function_ref @$ss27_allocateUninitializedArrayySayxG_BptBwlF : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // user: %4
+  %4 = apply %3<Any>(%2) : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // user: %5
+  (%5, %6) = destructure_tuple %4 : $(Array<Any>, Builtin.RawPointer) // users: %24, %21, %7
+  %7 = pointer_to_address %6 : $Builtin.RawPointer to [strict] $*Any // user: %14
+  %8 = string_literal utf8 "protocol"             // user: %13
+  %9 = integer_literal $Builtin.Word, 8           // user: %13
+  %10 = integer_literal $Builtin.Int1, -1         // user: %13
+  %11 = metatype $@thin String.Type               // user: %13
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %12 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %13
+  %13 = apply %12(%8, %9, %10, %11) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %15
+  %14 = init_existential_addr %7 : $*Any, $String // user: %15
+  store %13 to [init] %14 : $*String              // id: %15
+  // function_ref default argument 1 of print(_:separator:terminator:)
+  %16 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA0_ : $@convention(thin) () -> @owned String // user: %17
+  %17 = apply %16() : $@convention(thin) () -> @owned String // users: %23, %21
+  // function_ref default argument 2 of print(_:separator:terminator:)
+  %18 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA1_ : $@convention(thin) () -> @owned String // user: %19
+  %19 = apply %18() : $@convention(thin) () -> @owned String // users: %22, %21
+  // function_ref print(_:separator:terminator:)
+  %20 = function_ref @$ss5print_9separator10terminatoryypd_S2StF : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> () // user: %21
+  %21 = apply %20(%5, %17, %19) : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> ()
+  destroy_value %19 : $String                     // id: %22
+  destroy_value %17 : $String                     // id: %23
+  destroy_value %5 : $Array<Any>                  // id: %24
+  %25 = tuple ()                                  // user: %26
+  return %25 : $()                                // id: %26
+} // end sil function '$s4main7DrawingPAAE6circleyyF'
+
+// _allocateUninitializedArray<A>(_:)
+sil [serialized] [always_inline] [_semantics "array.uninitialized_intrinsic"] @$ss27_allocateUninitializedArrayySayxG_BptBwlF : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer)
+
+// String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+sil [serialized] [always_inline] [readonly] [_semantics "string.makeUTF8"] @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String
+
+// default argument 1 of print(_:separator:terminator:)
+sil hidden_external [serialized] @$ss5print_9separator10terminatoryypd_S2StFfA0_ : $@convention(thin) () -> @owned String
+
+// default argument 2 of print(_:separator:terminator:)
+sil hidden_external [serialized] @$ss5print_9separator10terminatoryypd_S2StFfA1_ : $@convention(thin) () -> @owned String
+
+// print(_:separator:terminator:)
+sil @$ss5print_9separator10terminatoryypd_S2StF : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> ()
+
+// Drawing.render()
+sil hidden [ossa] @$s4main7DrawingPAAE6renderyyF : $@convention(method) <Self where Self : Drawing> (@in_guaranteed Self) -> () {
+// %0 "self"                                      // users: %3, %1
+bb0(%0 : $*Self):
+  debug_value_addr %0 : $*Self, let, name "self", argno 1 // id: %1
+  // function_ref Drawing.circle()
+  %2 = function_ref @$s4main7DrawingPAAE6circleyyF : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> () // user: %3
+  %3 = apply %2<Self>(%0) : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> ()
+  %4 = tuple ()                                   // user: %5
+  return %4 : $()                                 // id: %5
+} // end sil function '$s4main7DrawingPAAE6renderyyF'
+
+// SVG.circle()
+sil hidden [ossa] @$s4main3SVGC6circleyyF : $@convention(method) (@guaranteed SVG) -> () {
+// %0 "self"                                      // user: %1
+bb0(%0 : @guaranteed $SVG):
+  debug_value %0 : $SVG, let, name "self", argno 1 // id: %1
+  %2 = integer_literal $Builtin.Word, 1           // user: %4
+  // function_ref _allocateUninitializedArray<A>(_:)
+  %3 = function_ref @$ss27_allocateUninitializedArrayySayxG_BptBwlF : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // user: %4
+  %4 = apply %3<Any>(%2) : $@convention(thin) <τ_0_0> (Builtin.Word) -> (@owned Array<τ_0_0>, Builtin.RawPointer) // user: %5
+  (%5, %6) = destructure_tuple %4 : $(Array<Any>, Builtin.RawPointer) // users: %24, %21, %7
+  %7 = pointer_to_address %6 : $Builtin.RawPointer to [strict] $*Any // user: %14
+  %8 = string_literal utf8 "class"                // user: %13
+  %9 = integer_literal $Builtin.Word, 5           // user: %13
+  %10 = integer_literal $Builtin.Int1, -1         // user: %13
+  %11 = metatype $@thin String.Type               // user: %13
+  // function_ref String.init(_builtinStringLiteral:utf8CodeUnitCount:isASCII:)
+  %12 = function_ref @$sSS21_builtinStringLiteral17utf8CodeUnitCount7isASCIISSBp_BwBi1_tcfC : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %13
+  %13 = apply %12(%8, %9, %10, %11) : $@convention(method) (Builtin.RawPointer, Builtin.Word, Builtin.Int1, @thin String.Type) -> @owned String // user: %15
+  %14 = init_existential_addr %7 : $*Any, $String // user: %15
+  store %13 to [init] %14 : $*String              // id: %15
+  // function_ref default argument 1 of print(_:separator:terminator:)
+  %16 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA0_ : $@convention(thin) () -> @owned String // user: %17
+  %17 = apply %16() : $@convention(thin) () -> @owned String // users: %23, %21
+  // function_ref default argument 2 of print(_:separator:terminator:)
+  %18 = function_ref @$ss5print_9separator10terminatoryypd_S2StFfA1_ : $@convention(thin) () -> @owned String // user: %19
+  %19 = apply %18() : $@convention(thin) () -> @owned String // users: %22, %21
+  // function_ref print(_:separator:terminator:)
+  %20 = function_ref @$ss5print_9separator10terminatoryypd_S2StF : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> () // user: %21
+  %21 = apply %20(%5, %17, %19) : $@convention(thin) (@guaranteed Array<Any>, @guaranteed String, @guaranteed String) -> ()
+  destroy_value %19 : $String                     // id: %22
+  destroy_value %17 : $String                     // id: %23
+  destroy_value %5 : $Array<Any>                  // id: %24
+  %25 = tuple ()                                  // user: %26
+  return %25 : $()                                // id: %26
+} // end sil function '$s4main3SVGC6circleyyF'
+
+// SVG.deinit
+sil hidden [ossa] @$s4main3SVGCfd : $@convention(method) (@guaranteed SVG) -> @owned Builtin.NativeObject {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @guaranteed $SVG):
+  debug_value %0 : $SVG, let, name "self", argno 1 // id: %1
+  %2 = unchecked_ref_cast %0 : $SVG to $Builtin.NativeObject // user: %3
+  %3 = unchecked_ownership_conversion %2 : $Builtin.NativeObject, @guaranteed to @owned // user: %4
+  return %3 : $Builtin.NativeObject               // id: %4
+} // end sil function '$s4main3SVGCfd'
+
+// SVG.__deallocating_deinit
+sil hidden [ossa] @$s4main3SVGCfD : $@convention(method) (@owned SVG) -> () {
+// %0 "self"                                      // users: %6, %3, %1
+bb0(%0 : @owned $SVG):
+  debug_value %0 : $SVG, let, name "self", argno 1 // id: %1
+  // function_ref SVG.deinit
+  %2 = function_ref @$s4main3SVGCfd : $@convention(method) (@guaranteed SVG) -> @owned Builtin.NativeObject // user: %4
+  %3 = begin_borrow %0 : $SVG                     // users: %5, %4
+  %4 = apply %2(%3) : $@convention(method) (@guaranteed SVG) -> @owned Builtin.NativeObject // user: %7
+  end_borrow %3 : $SVG                            // id: %5
+  end_lifetime %0 : $SVG                          // id: %6
+  %7 = unchecked_ref_cast %4 : $Builtin.NativeObject to $SVG // user: %8
+  dealloc_ref %7 : $SVG                           // id: %8
+  %9 = tuple ()                                   // user: %10
+  return %9 : $()                                 // id: %10
+} // end sil function '$s4main3SVGCfD'
+
+// SVG.__allocating_init()
+sil hidden [exact_self_class] [ossa] @$s4main3SVGCACycfC : $@convention(method) (@thick SVG.Type) -> @owned SVG {
+// %0 "$metatype"
+bb0(%0 : $@thick SVG.Type):
+  %1 = alloc_ref $SVG                             // user: %3
+  // function_ref SVG.init()
+  %2 = function_ref @$s4main3SVGCACycfc : $@convention(method) (@owned SVG) -> @owned SVG // user: %3
+  %3 = apply %2(%1) : $@convention(method) (@owned SVG) -> @owned SVG // user: %4
+  return %3 : $SVG                                // id: %4
+} // end sil function '$s4main3SVGCACycfC'
+
+// SVG.init()
+sil hidden [ossa] @$s4main3SVGCACycfc : $@convention(method) (@owned SVG) -> @owned SVG {
+// %0 "self"                                      // users: %2, %1
+bb0(%0 : @owned $SVG):
+  debug_value %0 : $SVG, let, name "self", argno 1 // id: %1
+  %2 = mark_uninitialized [rootself] %0 : $SVG    // users: %4, %3
+  %3 = copy_value %2 : $SVG                       // user: %5
+  destroy_value %2 : $SVG                         // id: %4
+  return %3 : $SVG                                // id: %5
+} // end sil function '$s4main3SVGCACycfc'
+
+// protocol witness for Drawing.render() in conformance SVG
+sil private [transparent] [thunk] [ossa] @$s4main3SVGCAA7DrawingA2aDP6renderyyFTW : $@convention(witness_method: Drawing) <τ_0_0 where τ_0_0 : SVG> (@in_guaranteed τ_0_0) -> () {
+// %0                                             // user: %2
+bb0(%0 : $*τ_0_0):
+  // function_ref Drawing.render()
+  %1 = function_ref @$s4main7DrawingPAAE6renderyyF : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> () // user: %2
+  %2 = apply %1<τ_0_0>(%0) : $@convention(method) <τ_0_0 where τ_0_0 : Drawing> (@in_guaranteed τ_0_0) -> ()
+  %3 = tuple ()                                   // user: %4
+  return %3 : $()                                 // id: %4
+} // end sil function '$s4main3SVGCAA7DrawingA2aDP6renderyyFTW'
+
+sil_vtable SVG {
+  #SVG.circle: (SVG) -> () -> () : @$s4main3SVGC6circleyyF	// SVG.circle()
+  #SVG.init!allocator: (SVG.Type) -> () -> SVG : @$s4main3SVGCACycfC	// SVG.__allocating_init()
+  #SVG.deinit!deallocator: @$s4main3SVGCfD	// SVG.__deallocating_deinit
+}
+
+sil_witness_table hidden SVG: Drawing module main {
+  method #Drawing.render: <Self where Self : Drawing> (Self) -> () -> () : @$s4main3SVGCAA7DrawingA2aDP6renderyyFTW	// protocol witness for Drawing.render() in conformance SVG
+}
+
+
+
+// Mappings from '#fileID' to '#filePath':
+//   'main/main.swift' => 'main.swift'
+
+

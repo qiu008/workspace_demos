@@ -1,0 +1,18 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios, '10.0'
+
+project 'Q'
+
+workspace 'Q'
+use_modular_headers!
+
+target 'Q' do
+  pod 'SnapKit', '~> 5.0.1'
+  pod 'R.swift', '~> 5.0.3'
+#  pod 'FacebookAuth', '~> 0.2.1'
+  #pod 'FBSDKCoreKit'
+  #pod 'FBSDKLoginKit'
+  #pod 'FacebookCore'
+  pod 'FacebookLogin'
+end
