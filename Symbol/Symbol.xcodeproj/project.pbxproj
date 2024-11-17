@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3900B7629067E23005E3955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3900B7529067E23005E3955 /* AppDelegate.swift */; };
+		D3900B7829067E23005E3955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3900B7729067E23005E3955 /* SceneDelegate.swift */; };
+		D3900B7A29067E23005E3955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3900B7929067E23005E3955 /* ViewController.swift */; };
+		D3900B7D29067E23005E3955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3900B7B29067E23005E3955 /* Main.storyboard */; };
+		D3900B7F29067E24005E3955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3900B7E29067E24005E3955 /* Assets.xcassets */; };
+		D3900B8229067E24005E3955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3900B8029067E24005E3955 /* LaunchScreen.storyboard */; };
+		D3900BB029069856005E3955 /* 0.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAA29069856005E3955 /* 0.webp */; };
+		D3900BB129069856005E3955 /* 3.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAB29069856005E3955 /* 3.webp */; };
+		D3900BB229069856005E3955 /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAC29069856005E3955 /* 4.webp */; };
+		D3900BB329069856005E3955 /* 5.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAD29069856005E3955 /* 5.webp */; };
+		D3900BB429069856005E3955 /* 2.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAE29069856005E3955 /* 2.webp */; };
+		D3900BB529069856005E3955 /* 1.webp in Resources */ = {isa = PBXBuildFile; fileRef = D3900BAF29069856005E3955 /* 1.webp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3900B7229067E23005E3955 /* Symbol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symbol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3900B7529067E23005E3955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3900B7729067E23005E3955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3900B7929067E23005E3955 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3900B7C29067E23005E3955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3900B7E29067E24005E3955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3900B8129067E24005E3955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3900B8329067E24005E3955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3900B8929067E4A005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900B8A29067E4A005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900B8B29067E4A005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900B8C29067E4A005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900B8D29067E4A005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900B9329067F2D005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900B95290683E7005E3955 /* 7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.webp; sourceTree = "<group>"; };
+		D3900B96290683E7005E3955 /* 8.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.webp; sourceTree = "<group>"; };
+		D3900B97290683E7005E3955 /* 6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.webp; sourceTree = "<group>"; };
+		D3900B9B29068BB2005E3955 /* 11.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11.webp; sourceTree = "<group>"; };
+		D3900B9C29068BB2005E3955 /* 10.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.webp; sourceTree = "<group>"; };
+		D3900B9D29068BB2005E3955 /* 9.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.webp; sourceTree = "<group>"; };
+		D3900B9E29068BB2005E3955 /* 12.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12.webp; sourceTree = "<group>"; };
+		D3900B9F29068BB2005E3955 /* 14.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 14.webp; sourceTree = "<group>"; };
+		D3900BA029068BB2005E3955 /* 13.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 13.webp; sourceTree = "<group>"; };
+		D3900BA729068BB9005E3955 /* 15.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 15.webp; sourceTree = "<group>"; };
+		D3900BAA29069856005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900BAB29069856005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900BAC29069856005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900BAD29069856005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900BAE29069856005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900BAF29069856005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900BB829069D26005E3955 /* demo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.webp; sourceTree = "<group>"; };
+		D3900BBA2907BDA8005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900BBB2907BDA8005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900BBC2907BDA8005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900BBD2907BDA8005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900BBE2907BDA8005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900BBF2907BDA8005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900BC62907BDB6005E3955 /* 10.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.webp; sourceTree = "<group>"; };
+		D3900BC72907BDB6005E3955 /* 13.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 13.webp; sourceTree = "<group>"; };
+		D3900BC82907BDB6005E3955 /* 11.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11.webp; sourceTree = "<group>"; };
+		D3900BC92907BDB6005E3955 /* 6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.webp; sourceTree = "<group>"; };
+		D3900BCA2907BDB6005E3955 /* 8.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.webp; sourceTree = "<group>"; };
+		D3900BCB2907BDB6005E3955 /* 7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.webp; sourceTree = "<group>"; };
+		D3900BCC2907BDB6005E3955 /* 9.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.webp; sourceTree = "<group>"; };
+		D3900BCD2907BDB6005E3955 /* 12.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12.webp; sourceTree = "<group>"; };
+		D3900BD82907DDB2005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900BD92907DDB2005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900BDC2907DDBA005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900BF72908CCA8005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900BF82908CCA8005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900BF92908CCA8005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900BFA2908CCA8005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900BFB2908CCA8005E3955 /* 6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.webp; sourceTree = "<group>"; };
+		D3900BFC2908CCA8005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900BFD2908CCA8005E3955 /* 7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.webp; sourceTree = "<group>"; };
+		D3900BFE2908CCA8005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900C072908D1A1005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900C082908D1A1005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900C092908D1A1005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900C0A2908D1A1005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900C0B2908D1A1005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900C0C2908D1A1005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900C132908E00D005E3955 /* 9.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.webp; sourceTree = "<group>"; };
+		D3900C142908E00D005E3955 /* 15.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 15.webp; sourceTree = "<group>"; };
+		D3900C152908E00D005E3955 /* 14.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 14.webp; sourceTree = "<group>"; };
+		D3900C162908E00D005E3955 /* 16.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 16.webp; sourceTree = "<group>"; };
+		D3900C172908E00D005E3955 /* 10.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.webp; sourceTree = "<group>"; };
+		D3900C182908E00D005E3955 /* 13.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 13.webp; sourceTree = "<group>"; };
+		D3900C192908E00D005E3955 /* 8.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.webp; sourceTree = "<group>"; };
+		D3900C1A2908E00D005E3955 /* 17.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 17.webp; sourceTree = "<group>"; };
+		D3900C1B2908E00D005E3955 /* 12.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12.webp; sourceTree = "<group>"; };
+		D3900C1C2908E00D005E3955 /* 11.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11.webp; sourceTree = "<group>"; };
+		D3900C2A29091A50005E3955 /* 0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.webp; sourceTree = "<group>"; };
+		D3900C2B29091A5A005E3955 /* 2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.webp; sourceTree = "<group>"; };
+		D3900C2C29091A5A005E3955 /* 5.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.webp; sourceTree = "<group>"; };
+		D3900C2D29091A5A005E3955 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
+		D3900C2E29091A5A005E3955 /* 6.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.webp; sourceTree = "<group>"; };
+		D3900C2F29091A5A005E3955 /* 3.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.webp; sourceTree = "<group>"; };
+		D3900C3029091A5A005E3955 /* 1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.webp; sourceTree = "<group>"; };
+		D3900C3129091A5A005E3955 /* 7.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.webp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3900B6F29067E23005E3955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3900B6929067E23005E3955 = {
+			isa = PBXGroup;
+			children = (
+				D3900B7429067E23005E3955 /* Symbol */,
+				D3900B7329067E23005E3955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3900B7329067E23005E3955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3900B7229067E23005E3955 /* Symbol.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3900B7429067E23005E3955 /* Symbol */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BB829069D26005E3955 /* demo.webp */,
+				D3900C2829091A26005E3955 /* Begin */,
+				D3900BA829068BCC005E3955 /* Step one */,
+				D3900BA929068BDE005E3955 /* Step two */,
+				D3900C2929091A3B005E3955 /* End */,
+				D3900B7529067E23005E3955 /* AppDelegate.swift */,
+				D3900B7729067E23005E3955 /* SceneDelegate.swift */,
+				D3900B7929067E23005E3955 /* ViewController.swift */,
+				D3900B7B29067E23005E3955 /* Main.storyboard */,
+				D3900B7E29067E24005E3955 /* Assets.xcassets */,
+				D3900B8029067E24005E3955 /* LaunchScreen.storyboard */,
+				D3900B8329067E24005E3955 /* Info.plist */,
+			);
+			path = Symbol;
+			sourceTree = "<group>";
+		};
+		D3900BA829068BCC005E3955 /* Step one */ = {
+			isa = PBXGroup;
+			children = (
+				D3900B8C29067E4A005E3955 /* 0.webp */,
+				D3900B8D29067E4A005E3955 /* 1.webp */,
+				D3900B8A29067E4A005E3955 /* 2.webp */,
+				D3900B8B29067E4A005E3955 /* 3.webp */,
+				D3900B8929067E4A005E3955 /* 4.webp */,
+				D3900B9329067F2D005E3955 /* 5.webp */,
+				D3900B97290683E7005E3955 /* 6.webp */,
+				D3900B95290683E7005E3955 /* 7.webp */,
+				D3900B96290683E7005E3955 /* 8.webp */,
+				D3900B9D29068BB2005E3955 /* 9.webp */,
+				D3900B9C29068BB2005E3955 /* 10.webp */,
+				D3900B9B29068BB2005E3955 /* 11.webp */,
+				D3900B9E29068BB2005E3955 /* 12.webp */,
+				D3900BA029068BB2005E3955 /* 13.webp */,
+				D3900B9F29068BB2005E3955 /* 14.webp */,
+				D3900BA729068BB9005E3955 /* 15.webp */,
+			);
+			path = "Step one";
+			sourceTree = "<group>";
+		};
+		D3900BA929068BDE005E3955 /* Step two */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BB629069872005E3955 /* Function Starts */,
+				D3900BB729069885005E3955 /* Nlist Symbols List */,
+				D3900BDE2907DDCA005E3955 /* DWARF */,
+			);
+			path = "Step two";
+			sourceTree = "<group>";
+		};
+		D3900BB629069872005E3955 /* Function Starts */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BAA29069856005E3955 /* 0.webp */,
+				D3900BAF29069856005E3955 /* 1.webp */,
+				D3900BAE29069856005E3955 /* 2.webp */,
+				D3900BAB29069856005E3955 /* 3.webp */,
+				D3900BAC29069856005E3955 /* 4.webp */,
+				D3900BAD29069856005E3955 /* 5.webp */,
+			);
+			path = "Function Starts";
+			sourceTree = "<group>";
+		};
+		D3900BB729069885005E3955 /* Nlist Symbols List */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BDC2907DDBA005E3955 /* 0.webp */,
+				D3900BD62907D4AF005E3955 /* Direct Symbols */,
+				D3900BD72907D506005E3955 /* Indirect Symbols */,
+			);
+			path = "Nlist Symbols List";
+			sourceTree = "<group>";
+		};
+		D3900BD62907D4AF005E3955 /* Direct Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BBB2907BDA8005E3955 /* 0.webp */,
+				D3900BBC2907BDA8005E3955 /* 1.webp */,
+				D3900BBD2907BDA8005E3955 /* 2.webp */,
+				D3900BBF2907BDA8005E3955 /* 3.webp */,
+				D3900BBA2907BDA8005E3955 /* 4.webp */,
+				D3900BBE2907BDA8005E3955 /* 5.webp */,
+				D3900BC92907BDB6005E3955 /* 6.webp */,
+				D3900BCB2907BDB6005E3955 /* 7.webp */,
+				D3900BCA2907BDB6005E3955 /* 8.webp */,
+				D3900BCC2907BDB6005E3955 /* 9.webp */,
+				D3900BC62907BDB6005E3955 /* 10.webp */,
+				D3900BC82907BDB6005E3955 /* 11.webp */,
+				D3900BCD2907BDB6005E3955 /* 12.webp */,
+				D3900BC72907BDB6005E3955 /* 13.webp */,
+			);
+			path = "Direct Symbols";
+			sourceTree = "<group>";
+		};
+		D3900BD72907D506005E3955 /* Indirect Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BD82907DDB2005E3955 /* 0.webp */,
+				D3900BD92907DDB2005E3955 /* 1.webp */,
+			);
+			path = "Indirect Symbols";
+			sourceTree = "<group>";
+		};
+		D3900BDE2907DDCA005E3955 /* DWARF */ = {
+			isa = PBXGroup;
+			children = (
+				D3900BFE2908CCA8005E3955 /* 0.webp */,
+				D3900BF92908CCA8005E3955 /* 1.webp */,
+				D3900BFA2908CCA8005E3955 /* 2.webp */,
+				D3900BF82908CCA8005E3955 /* 3.webp */,
+				D3900BFC2908CCA8005E3955 /* 4.webp */,
+				D3900BF72908CCA8005E3955 /* 5.webp */,
+				D3900BFB2908CCA8005E3955 /* 6.webp */,
+				D3900BFD2908CCA8005E3955 /* 7.webp */,
+				D3900C192908E00D005E3955 /* 8.webp */,
+				D3900C132908E00D005E3955 /* 9.webp */,
+				D3900C172908E00D005E3955 /* 10.webp */,
+				D3900C1C2908E00D005E3955 /* 11.webp */,
+				D3900C1B2908E00D005E3955 /* 12.webp */,
+				D3900C182908E00D005E3955 /* 13.webp */,
+				D3900C152908E00D005E3955 /* 14.webp */,
+				D3900C142908E00D005E3955 /* 15.webp */,
+				D3900C162908E00D005E3955 /* 16.webp */,
+				D3900C1A2908E00D005E3955 /* 17.webp */,
+			);
+			path = DWARF;
+			sourceTree = "<group>";
+		};
+		D3900C2829091A26005E3955 /* Begin */ = {
+			isa = PBXGroup;
+			children = (
+				D3900C0B2908D1A1005E3955 /* 0.webp */,
+				D3900C072908D1A1005E3955 /* 1.webp */,
+				D3900C082908D1A1005E3955 /* 2.webp */,
+				D3900C0C2908D1A1005E3955 /* 3.webp */,
+				D3900C092908D1A1005E3955 /* 4.webp */,
+				D3900C0A2908D1A1005E3955 /* 5.webp */,
+			);
+			path = Begin;
+			sourceTree = "<group>";
+		};
+		D3900C2929091A3B005E3955 /* End */ = {
+			isa = PBXGroup;
+			children = (
+				D3900C2A29091A50005E3955 /* 0.webp */,
+				D3900C3029091A5A005E3955 /* 1.webp */,
+				D3900C2B29091A5A005E3955 /* 2.webp */,
+				D3900C2F29091A5A005E3955 /* 3.webp */,
+				D3900C2D29091A5A005E3955 /* 4.webp */,
+				D3900C2C29091A5A005E3955 /* 5.webp */,
+				D3900C2E29091A5A005E3955 /* 6.webp */,
+				D3900C3129091A5A005E3955 /* 7.webp */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3900B7129067E23005E3955 /* Symbol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3900B8629067E24005E3955 /* Build configuration list for PBXNativeTarget "Symbol" */;
+			buildPhases = (
+				D3900B6E29067E23005E3955 /* Sources */,
+				D3900B6F29067E23005E3955 /* Frameworks */,
+				D3900B7029067E23005E3955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Symbol;
+			productName = Symbol;
+			productReference = D3900B7229067E23005E3955 /* Symbol.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3900B6A29067E23005E3955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D3900B7129067E23005E3955 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D3900B6D29067E23005E3955 /* Build configuration list for PBXProject "Symbol" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3900B6929067E23005E3955;
+			productRefGroup = D3900B7329067E23005E3955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3900B7129067E23005E3955 /* Symbol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3900B7029067E23005E3955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3900BB329069856005E3955 /* 5.webp in Resources */,
+				D3900BB229069856005E3955 /* 4.webp in Resources */,
+				D3900BB129069856005E3955 /* 3.webp in Resources */,
+				D3900B8229067E24005E3955 /* LaunchScreen.storyboard in Resources */,
+				D3900BB029069856005E3955 /* 0.webp in Resources */,
+				D3900B7F29067E24005E3955 /* Assets.xcassets in Resources */,
+				D3900BB429069856005E3955 /* 2.webp in Resources */,
+				D3900BB529069856005E3955 /* 1.webp in Resources */,
+				D3900B7D29067E23005E3955 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3900B6E29067E23005E3955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3900B7A29067E23005E3955 /* ViewController.swift in Sources */,
+				D3900B7629067E23005E3955 /* AppDelegate.swift in Sources */,
+				D3900B7829067E23005E3955 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3900B7B29067E23005E3955 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3900B7C29067E23005E3955 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3900B8029067E24005E3955 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3900B8129067E24005E3955 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3900B8429067E24005E3955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3900B8529067E24005E3955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3900B8729067E24005E3955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Symbol/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = STL.Symbol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3900B8829067E24005E3955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Symbol/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = STL.Symbol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3900B6D29067E23005E3955 /* Build configuration list for PBXProject "Symbol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3900B8429067E24005E3955 /* Debug */,
+				D3900B8529067E24005E3955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3900B8629067E24005E3955 /* Build configuration list for PBXNativeTarget "Symbol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3900B8729067E24005E3955 /* Debug */,
+				D3900B8829067E24005E3955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3900B6A29067E23005E3955 /* Project object */;
+}
