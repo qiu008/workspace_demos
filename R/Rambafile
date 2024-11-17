@@ -1,0 +1,31 @@
+### Headers settings
+company: STL
+
+### Xcode project settings
+project_name: R
+xcodeproj_path: R.xcodeproj
+prefix: R
+
+### Code generation settings section
+# The main project target name
+project_target: R
+
+# The file path for new modules
+project_file_path: R
+
+# The Xcode group path to new modules
+project_group_path: R
+
+### Dependencies settings section
+podfile_path: R
+cartfile_path: R
+
+### Templates
+#catalogs:
+#- "https://gitwbp5.wbp5.com/iOS/bviper.git"
+#templates:
+#- {name: bviper}
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
