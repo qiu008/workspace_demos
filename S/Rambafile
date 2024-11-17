@@ -1,0 +1,24 @@
+### Headers settings
+company: STL
+
+### Xcode project settings
+project_name: S
+xcodeproj_path: S.xcodeproj
+prefix: 
+
+### Code generation settings section
+# The main project target name
+project_target: S
+
+# The file path for new modules
+project_file_path: S
+
+# The Xcode group path to new modules
+project_group_path: S
+
+### Dependencies settings section
+podfile_path: S
+
+### Templates
+templates:
+- {name: bviper}

@@ -1,0 +1,45 @@
+PODS:
+  - Bugly (2.5.91)
+  - mob_sharesdk/ShareSDK (4.4.6):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.4.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/GooglePlus (4.4.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - MOBFoundation (3.2.36)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - Bugly
+  - mob_sharesdk/ShareSDKPlatforms/Facebook
+  - mob_sharesdk/ShareSDKPlatforms/GooglePlus
+  - RxCocoa
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bugly
+    - mob_sharesdk
+    - MOBFoundation
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
+  mob_sharesdk: 5dbc669a4ee1004c6b4ea95730857d2e6d103aa6
+  MOBFoundation: 78ad4264f436b3d147375ab7fdb8088b9e22ca5d
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: 2f4469ca28dd5e9a023e869e17ef14d781e65ab7
+
+COCOAPODS: 1.11.3

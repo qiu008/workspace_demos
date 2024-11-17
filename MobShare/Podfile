@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '13.0'
+
+use_frameworks!
+
+target 'MobShare' do
+  
+  pod 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+  pod 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+  pod 'RxCocoa'
+  
+end
+
