@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2BE152AA6993DBB5A42274 /* Pods_Web3Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1E69A8D62B147C4C73A01D /* Pods_Web3Wallet.framework */; };
 		D3B0BB432D26927D00A43910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0BB422D26927D00A43910 /* AppDelegate.swift */; };
 		D3B0BB452D26927D00A43910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0BB442D26927D00A43910 /* SceneDelegate.swift */; };
 		D3B0BB472D26927D00A43910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0BB462D26927D00A43910 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7403CF2D14D9562550904F1B /* Pods-Web3Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web3Wallet.release.xcconfig"; path = "Target Support Files/Pods-Web3Wallet/Pods-Web3Wallet.release.xcconfig"; sourceTree = "<group>"; };
 		D3B0BB3F2D26927D00A43910 /* Web3Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Web3Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B0BB422D26927D00A43910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B0BB442D26927D00A43910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		D3B0BB4B2D26928100A43910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3B0BB4E2D26928100A43910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3B0BB502D26928100A43910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1E69A8D62B147C4C73A01D /* Pods_Web3Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Web3Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC06DA1D35F1CA5560F9A4B4 /* Pods-Web3Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Web3Wallet.debug.xcconfig"; path = "Target Support Files/Pods-Web3Wallet/Pods-Web3Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2BE152AA6993DBB5A42274 /* Pods_Web3Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48492B7380259A8D654BEB76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED1E69A8D62B147C4C73A01D /* Pods_Web3Wallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7D5D69690CC8BCF25B71925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC06DA1D35F1CA5560F9A4B4 /* Pods-Web3Wallet.debug.xcconfig */,
+				7403CF2D14D9562550904F1B /* Pods-Web3Wallet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3B0BB362D26927D00A43910 = {
 			isa = PBXGroup;
 			children = (
 				D3B0BB412D26927D00A43910 /* Web3Wallet */,
 				D3B0BB402D26927D00A43910 /* Products */,
+				B7D5D69690CC8BCF25B71925 /* Pods */,
+				48492B7380259A8D654BEB76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3B0BB532D26928100A43910 /* Build configuration list for PBXNativeTarget "Web3Wallet" */;
 			buildPhases = (
+				3462B55C0EBB3B2053F7B7C0 /* [CP] Check Pods Manifest.lock */,
 				D3B0BB3B2D26927D00A43910 /* Sources */,
 				D3B0BB3C2D26927D00A43910 /* Frameworks */,
 				D3B0BB3D2D26927D00A43910 /* Resources */,
+				9083C84B51086EB05905B920 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3462B55C0EBB3B2053F7B7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Web3Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9083C84B51086EB05905B920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Web3Wallet/Pods-Web3Wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Web3Wallet/Pods-Web3Wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Web3Wallet/Pods-Web3Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3B0BB3B2D26927D00A43910 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		D3B0BB542D26928100A43910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC06DA1D35F1CA5560F9A4B4 /* Pods-Web3Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		D3B0BB552D26928100A43910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7403CF2D14D9562550904F1B /* Pods-Web3Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

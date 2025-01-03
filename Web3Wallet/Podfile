@@ -10,8 +10,8 @@ target 'Web3Wallet' do
 
   # Pods for Web3Wallet
 #pod 'Web3.swift'
-pod 'EthereumKit'
+#pod 'EthereumKit'
 pod 'web3swift'
-pod 'BitcoinKit'
+#pod 'BitcoinKit'
 
 end
