@@ -9,11 +9,11 @@ target 'Web3Wallet' do
   use_frameworks!
 
   # Pods for Web3Wallet
-
-pod 'TrustWalletCore'
 #pod 'Web3.swift'
 #pod 'BitcoinKit'
 #pod 'web3.swift'
-pod 'web3swift'
+
+#pod 'TrustWalletCore'
+#pod 'web3swift'
 
 end
