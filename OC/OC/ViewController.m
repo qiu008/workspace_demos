@@ -49,6 +49,16 @@
 
 @implementation ViewController
 
+- (BOOL)canBecomeFirstResponder {
+    [super canBecomeFirstResponder];
+    [UIApplication.sharedApplication sendAction:@selector(testUIApplicationAendAction) to:self from:self forEvent:NULL];
+    return YES;
+}
+
+- (void)testUIApplicationAendAction {
+    NSLog(@"testUIApplicationAendAction");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.subviews;

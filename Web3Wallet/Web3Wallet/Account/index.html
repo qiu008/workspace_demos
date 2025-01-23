@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcoin Libraries Test</title>
+    <script src="./bitcoin-fbwallet.js"></script>
+</head>
+<body>
+    <h1>Bitcoin Libraries</h1>
+    <script>
+        function testnetAccountFromWIFPrivateKey(wifStr) {
+            const { ecpair, bitcoin, ecc, toX } = BitcoinLibs.BitcoinLibs;
+            bitcoin.initEccLib(ecc);
+            const network = bitcoin.networks.testnet
+            const ecFactory = ecpair.ECPairFactory(ecc);
+            const k = ecFactory.fromWIF(wifStr, network);
+            const XOnlyPubkey = toX.toXOnly(k.publicKey);
+            const tweak = bitcoin.crypto.taggedHash('TapTweak', XOnlyPubkey);
+            const tweakedChildNode = k.tweak(tweak);
+            const tweakedPublicKeyBuffer = Buffer.from(tweakedChildNode.publicKey);
+            const tweakedXOnlyPubkey = toX.toXOnly(tweakedPublicKeyBuffer);
+            
+            const { address } = bitcoin.payments.p2tr({
+                  pubkey: tweakedXOnlyPubkey,
+                  network,
+            });
+            return address
+        }
+        
+        function testnetAccountFromMnemonic(mnemonic) {
+            const { bip32, bip39, ecpair, bitcoin, BIP32Factory, ecc, toX } = BitcoinLibs.BitcoinLibs;
+            const path = `m/86'/0'/0'/0/0`;
+            const network = bitcoin.networks.testnet
+            const ecFactory = ecpair.ECPairFactory(ecc);
+            bitcoin.initEccLib(ecc);
+            const seed = bip39.mnemonicToSeedSync(mnemonic);
+            const bip32F = BIP32Factory(ecc)
+            const rootKey = bip32F.fromSeed(seed, network);
+            const childNode = rootKey.derivePath(path);
+            const publicKeyBuffer = Buffer.from(childNode.publicKey);
+            const XOnlyPubkey = toX.toXOnly(publicKeyBuffer);
+            const tweak = bitcoin.crypto.taggedHash('TapTweak', XOnlyPubkey)
+            const tweakedChildNode = childNode.tweak(tweak);
+            const tweakedPublicKeyBuffer = Buffer.from(tweakedChildNode.publicKey);
+            const tweakedXOnlyPubkey = toX.toXOnly(tweakedPublicKeyBuffer);
+            
+            const { address } = bitcoin.payments.p2tr({
+                  pubkey: tweakedXOnlyPubkey,
+                  network,
+            });
+            const privateKey = childNode.toWIF()
+            return {address, privateKey}
+        }
+        
+    </script>
+</body>
+</html>
