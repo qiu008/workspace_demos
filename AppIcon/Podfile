@@ -1,0 +1,470 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+source 'https://cdn.cocoapods.org/'
+#Define the SciChart cocoapods source
+source 'https://github.com/ABTSoftware/PodSpecs.git'
+source 'https://gitwbp5.tostar.top/iOS/STLSpecs.git'
+
+
+use_frameworks!
+use_modular_headers!
+
+workspace './FastBull'
+
+# 消除警告
+inhibit_all_warnings!
+
+# 导入 flutter 模块
+#flutter_application_path = '../../fxchat_flutter/flutter_module_fast_bull'
+#load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+def pods_Web3Wallet
+  pod 'web3swift', '~> 3.1.2'
+  pod 'TrustWalletCore'
+  pod 'R.swift', '~> 5.4.0'
+end
+
+def pods_forexchat
+  
+#  pod 'STLIM', :git => 'https://gitwbp5.tostar.top/iOS/STLIM.git', :branch => 'dev'
+#  pod 'STLIM/STLIMKit', :git => 'https://gitwbp5.tostar.top/iOS/STLIM.git', :branch => 'dev'
+  pod 'STLIM', :path => '../../STLIM'
+  pod 'STLIM/STLIMKit', :path => '../../STLIM'
+  pod 'RongCloudRTC/RongCallLib', '5.7.0'
+  pod 'RongCloudIM/IMLib', '5.7.0'
+  pod 'FDFullscreenPopGesture', '~> 1.1'
+#  
+end
+
+
+def pods_STLFoundation
+ 
+  pod 'STLFoundation', :path => '../../STLFoundation'
+  pod 'STLFoundation/Utils', :path => '../../STLFoundation'
+  pod 'STLFoundation/Crypto', :path => '../../STLFoundation'
+  pod 'STLFoundation/STLPush', :path => '../../STLFoundation'
+
+#  pod 'STLFoundation', :git => 'https://gitwbp5.tostar.top/iOS/STLFoundation.git', :commit => '112f8181637d142971bf4e9d67e230e71b3a1f83'
+#  pod 'STLFoundation/Utils', :git => 'https://gitwbp5.tostar.top/iOS/STLFoundation.git', :commit => '112f8181637d142971bf4e9d67e230e71b3a1f83'
+#  pod 'STLFoundation/Crypto', :git => 'https://gitwbp5.tostar.top/iOS/STLFoundation.git', :commit => '112f8181637d142971bf4e9d67e230e71b3a1f83'
+#  pod 'STLFoundation/STLPush', :git => 'https://gitwbp5.tostar.top/iOS/STLFoundation.git', :commit => '112f8181637d142971bf4e9d67e230e71b3a1f83'
+#
+
+  pod 'STLKit/Core', :git => 'https://gitwbp5.tostar.top/iOS/STLKit.git', :commit => '5dfb6fbc3cc9654802c095798fbe7314ba94a364'
+  pod 'STLKit/STLNavigation', :git => 'https://gitwbp5.tostar.top/iOS/STLKit.git', :commit => '5dfb6fbc3cc9654802c095798fbe7314ba94a364'
+  pod 'STLKit/STLTableViewReresh', :git => 'https://gitwbp5.tostar.top/iOS/STLKit.git', :commit => '5dfb6fbc3cc9654802c095798fbe7314ba94a364'
+  pod 'STLKit/STLBanner', :git => 'https://gitwbp5.tostar.top/iOS/STLKit.git', :commit => '5dfb6fbc3cc9654802c095798fbe7314ba94a364'
+  pod 'STLKit/STLPopTipController', :git => 'https://gitwbp5.tostar.top/iOS/STLKit.git', :commit => '5dfb6fbc3cc9654802c095798fbe7314ba94a364'
+  
+#  pod 'STLKit/Core', '~> 1.0.0'
+#  pod 'STLKit/STLNavigation','~> 1.0.0'
+#  pod 'STLKit/STLTableViewReresh', '~> 1.0.0'
+#  pod 'STLKit/STLBanner', '~> 1.0.0'
+  pod 'ReachabilitySwift', '~> 5.0.0'
+
+  pod 'MBProgressHUD', '~> 1.2.0'
+end
+
+#基类模块专用
+def pods_ModuleFoundation
+  pod 'RxAlamofire'
+  pod 'KingfisherWebP', '~> 0.7.0'
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'R.swift', '~> 5.4.0'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'HandyJSON', :git => 'https://github.com/fuqinglin/HandyJSON.git', :commit => '4789397194a8011d87de867e4686fea5bbd2c4b7'
+  pod 'ObjectMapper', '~> 3.3.0'
+  pod 'YTKKeyValueStore'
+  pod 'SwiftyStoreKit'
+  pod 'JTAppleCalendar', '8.0.5'#📅
+  pod 'JXSegmentedView', '1.4.1' #分页控制视图
+  pod 'JXPagingView', :git => 'https://github.com/pujiaxin33/JXPagingView.git', :commit => '660d219e3509c705211a51aadb40dc845ddc7907'
+#  pod 'TZImagePickerController', '~> 3.8.5'
+  pod "STL_TZImagePickerController", :path => '../../stl_tzimagepickercontroller'
+#  pod 'STL_TZImagePickerController', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/stl_tzimagepickercontroller.git', :commit => '1aaecca478f81ac5e5721450de2dd438a1dce8c8'
+  pod 'FDFullscreenPopGesture', '~> 1.1'
+  pod 'lottie-ios', '4.3.3'
+  pod 'YYText', '~> 1.0.7'
+  pod 'ZeroMQ_Swift', '~> 1.0.2'
+  pod 'SVGKit', '~> 3.0.0'
+  
+  pod "StompClientLib"
+end
+
+#共用第三方库
+def pods_ModuleCommon
+  pod 'RxAlamofire'
+  pod 'R.swift', '~> 5.4.0'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'KingfisherWebP', '~> 0.7.0'
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'HandyJSON', :git => 'https://github.com/fuqinglin/HandyJSON.git', :commit => '4789397194a8011d87de867e4686fea5bbd2c4b7'
+  pod 'ObjectMapper', '~> 3.3.0'
+  pod 'FDFullscreenPopGesture', '~> 1.1'
+  pod 'lottie-ios', '4.3.3'
+  pod 'NSAttributedString-DDHTML', '1.2.0'
+  pod 'YYText', '~> 1.0.7'
+  pod 'JXSegmentedView', '1.4.1'
+  pod 'JXPagingView', :git => 'https://github.com/pujiaxin33/JXPagingView.git', :commit => '660d219e3509c705211a51aadb40dc845ddc7907'
+  pod 'IQKeyboardManagerSwift'
+end
+
+def pods_shareSDK
+  pod 'MOBFoundation', '3.2.63'
+  pod 'mob_sharesdk', '4.4.10'
+  pod 'mob_sharesdk/ShareSDKExtension', '4.4.10'
+
+  # 国内
+  pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+
+  # 国外
+  pod 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+  pod 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+  pod 'mob_sharesdk/ShareSDKPlatforms/Apple'
+
+  # 越南Zalo登录
+  pod 'ZaloSDK', '~> 4.1.0120'
+
+  # 后期需要添加，勿删
+  #pod 'mob_sharesdk/ShareSDKPlatforms/Messenger'
+  #pod 'mob_sharesdk/ShareSDKPlatforms/WhatsApp'
+  #pod 'mob_sharesdk/ShareSDKPlatforms/Telegram'
+  
+end
+
+#快讯专用
+def pods_ModuleNews
+  pod 'STL_SciChart', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/STL_SciChart.git'
+  pod 'JTAppleCalendar', '8.0.5'#📅
+  pod 'Tiercel' , '3.2.0'
+  pod 'FMDB'
+  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+  pod 'FSPagerView'
+end
+
+#行情专用
+def pods_ModuleForex
+  pod 'STL_SciChart', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/STL_SciChart.git'
+  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+end
+
+
+#账号
+def pods_ModuleAccount
+  
+end
+
+#个人中心
+def pods_ModuleMine
+  pod 'STLIM', :path => '../../STLIM'
+  pod 'STLIM/STLIMKit', :path => '../../STLIM'
+  pod 'SwiftyStoreKit'
+  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+end
+
+#视频
+def pods_ModuleVideo
+
+end
+
+#数据中心
+def pods_ModuleDataCenter
+  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+  pod 'STL_SciChart', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/STL_SciChart.git'
+  pod 'JTAppleCalendar', '8.0.5'
+
+end
+
+def pods_ModuleRadio
+  pod 'NELivePlayer', '~> 2.5.0'
+end
+
+
+################################ 主工程 ################################
+
+abstract_target 'abstract_pod' do
+
+  project'./FastBull.xcodeproj'
+
+  #统计
+#  pod 'UMCommon'
+#  pod 'UMDevice'
+  
+  pod 'GoogleAnalytics', '~> 3.23.0'
+  pod 'FirebaseCore', '~> 10.24.0'
+  pod 'FirebaseAnalytics', '~> 10.24.0'
+  pod 'FirebaseCrashlytics', '~> 10.24.0'
+  # 阿里号码认证服务
+  pod 'STL_ATAuthSDK', :git => "https://gitwbp5.tostar.top/iOS_Third-party_Libraries/STL_ATAuthSDK.git"
+
+  pod 'Bugly', '~> 2.5.90'
+  
+  # https://zh.dev.appsflyer.com/hc/docs/integrate-ios-sdk#添加scenedelegate支持
+  pod 'AppsFlyerFramework', '6.12.3'
+  
+  pod 'GoogleSignIn', '~> 7.0.0'
+
+  pods_shareSDK
+  pods_STLFoundation
+  pods_ModuleCommon
+#  pods_ModuleNews
+  pods_ModuleForex
+#  pods_ModuleAccount
+#  pods_ModuleVideo
+#  pods_ModuleDataCenter
+  pods_ModuleFoundation
+#  pods_ModuleRadio
+  pods_Web3Wallet
+  
+  target 'FastBull' do
+#    pods_forexchat
+#    install_all_flutter_pods(flutter_application_path)
+  end
+  
+  target 'FabuFinance' do
+#    install_all_flutter_pods(flutter_application_path)
+#    pods_forexchat
+  end
+end
+
+
+################################ 业务模块 ################################
+#快讯
+target 'Module_News' do
+  project '../Module_News/Module_News.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleNews
+end
+
+#行情
+target 'Module_Forex' do
+  project '../Module_Forex/Module_Forex.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleForex
+end
+
+#数据
+target 'Module_DataCenter' do
+  project '../Module_DataCenter/Module_DataCenter.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleDataCenter
+end
+
+#视频
+target 'Module_Video' do
+  project '../Module_Video/Module_Video.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleVideo
+end
+
+#电台
+target 'Module_Radio' do
+  project '../Module_Radio/Module_Radio.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleRadio
+end
+
+#zmq
+target 'BLSZMQ' do
+  project '../BLSZMQ/BLSZMQ.xcodeproj'
+#  pods_STLFoundation
+#  pod 'RxSwift'
+#  pod 'RxCocoa',    '~> 5.0'
+#  pod 'ZeroMQ_Swift', '~> 1.0.2'
+end
+
+#我的
+target 'Module_Mine' do
+  project '../Module_Mine/Module_Mine.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleMine
+end
+
+#账号相关
+target 'Module_Account' do
+  project '../Module_Account/Module_Account.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_ModuleAccount
+end
+
+#Router
+target 'Router' do
+  project '../Router/Router.xcodeproj'
+end
+
+#Foundation
+target 'BLSFoundation' do
+  project '../BLSFoundation/BLSFoundation.xcodeproj'
+  pod 'STL_SciChart', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/STL_SciChart.git'
+  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+  pod 'IQKeyboardManagerSwift'
+  pods_STLFoundation
+  pods_ModuleFoundation
+  
+end
+
+#Flutter 模块
+target 'Module_Flutter' do
+  project '../Module_Flutter/Module_Flutter.xcodeproj'
+#  install_all_flutter_pods(flutter_application_path)
+#  pods_forexchat
+#  pods_STLFoundation
+#  pod 'RxCocoa', '~> 5.0'
+#  pods_ModuleCommon
+#  pod "STL_TZImagePickerController", :path => '../../stl_tzimagepickercontroller'
+#  pod 'SpreadsheetView', :git => 'https://github.com/SeekForSunny/SpreadsheetView.git'
+##  pod 'STL_TZImagePickerController', :git => 'https://gitwbp5.tostar.top/iOS_Third-party_Libraries/stl_tzimagepickercontroller.git', :commit => '1aaecca478f81ac5e5721450de2dd438a1dce8c8'
+end
+
+target 'Module_Chat' do
+  project '../Module_Chat/Module_Chat.xcodeproj'
+#  pods_STLFoundation
+#  pods_ModuleCommon
+#  pods_forexchat
+end
+
+
+target 'Module_Web3Wallet' do
+  project '../Module_Web3Wallet/Module_Web3Wallet.xcodeproj'
+  pods_STLFoundation
+  pods_ModuleCommon
+  pods_Web3Wallet
+
+end
+
+#test
+
+# update xcconfig property
+def update_xcconfig(xcconfig_path, key, value)
+    # read from xcconfig to build_settings dictionary
+    build_settings = Hash[*File.read(xcconfig_path).lines.map{|x| x.delete!("\n").split(/\s*=\s*/, 2)}.flatten]
+
+    # modify key
+    if build_settings.has_key?(key)
+      if build_settings[key].index(value) == nil
+        build_settings[key] << value
+      end
+    else
+        build_settings[key] = value
+    end
+    
+    puts "#{build_settings}"
+    puts "#{xcconfig_path}"
+    # write build_settings dictionary to xcconfig
+    File.open(xcconfig_path, "w+") {|file|
+       build_settings.each do |k, v|
+         file.puts "#{k} = #{v}"
+       end
+    }
+end
+
+
+post_install do |installer|
+
+  flutter_post_install(installer) if defined?(flutter_post_install)
+
+  lswiftCoreGraphicsArray = ['RxCocoa', 'SnapKit', 'STLFoundation', 'HandyJSON', 'ObjectMapper', 'lottie-ios', 'JXSegmentedView', 'JXPagingView', 'IQKeyboardManagerSwift', 'JTAppleCalendar', 'Kingfisher', 'STLKit', 'SpreadsheetView']
+  
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+    end
+  end
+  
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      xcconfig_path = config.base_configuration_reference.real_path
+      xcconfig = File.read(xcconfig_path)
+      xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
+      File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
+      
+      # Flutter 唤起相机、相册等授权
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+              '$(inherited)',
+              ## dart: PermissionGroup.calendar
+              # 'PERMISSION_EVENTS=1',
+
+              ## dart: PermissionGroup.reminders
+              # 'PERMISSION_REMINDERS=1',
+
+              ## dart: PermissionGroup.contacts
+              'PERMISSION_CONTACTS=1',
+
+              ## dart: PermissionGroup.camera
+              'PERMISSION_CAMERA=1',
+
+              ## dart: PermissionGroup.microphone
+              'PERMISSION_MICROPHONE=1',
+
+              ## dart: PermissionGroup.speech
+              # 'PERMISSION_SPEECH_RECOGNIZER=1',
+
+              ## dart: PermissionGroup.photos
+              'PERMISSION_PHOTOS=1',
+
+              ## dart: [PermissionGroup.location, PermissionGroup.locationAlways, PermissionGroup.locationWhenInUse]
+              'PERMISSION_LOCATION=1',
+              
+              # 'PERMISSION_ACTIVITY=1',
+            ]
+    end
+    
+    if target.name == 'RxSwift'
+       target.build_configurations.each do |config|
+             config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['-D', 'TRACE_RESOURCES']
+       end
+    end
+    
+    if target.name.include? 'mob_sharesdk'
+       target.build_configurations.each do |config|
+          config.build_settings['CODE_SIGN_IDENTITY'] = ''
+       end
+    end
+    
+    if target.name.include? 'Google'
+       target.build_configurations.each do |config|
+          config.build_settings['CODE_SIGN_IDENTITY'] = ''
+       end
+    end
+    
+    if target.name == 'HandyJSON'
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_COMPILATION_MODE'] = 'incremental'
+      end
+    end
+    
+    if lswiftCoreGraphicsArray.index(target.name) != nil
+      target.build_configurations.each do |config|
+        puts "#{target.name}"
+#        na = config.build_settings['OTHER_LDFLAGS']
+#        puts "#{na}"
+#        puts "#{config.build_settings}"
+#        if config.build_settings['OTHER_LDFLAGS'] == nil
+#          puts "OTHER_LDFLAGS nil"
+#          config.build_settings['OTHER_LDFLAGS'] = ['-Wl,-weak-lswiftCoreGraphics']
+#        else
+#          puts "OTHER_LDFLAGS not nil"
+#          list = config.build_settings['OTHER_LDFLAGS']
+#          puts "#{list}"
+#          config.build_settings['OTHER_LDFLAGS'] += ['-Wl,-weak-lswiftCoreGraphics']
+#        end
+        
+      # 添加额外的 OTHER_LDFLAGS
+        xcconfig_path = config.base_configuration_reference.real_path
+        update_xcconfig(xcconfig_path, 'OTHER_LDFLAGS', ' -Wl,-weak-lswiftCoreGraphics')
+      end
+    end
+end
+  
+end

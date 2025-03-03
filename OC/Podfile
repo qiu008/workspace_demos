@@ -8,4 +8,6 @@ target 'OC' do
   pod 'Masonry', '~> 1.1.0'
   pod 'YYModel', '~> 1.0.4'
   pod 'HandyJSON'
+  pod 'TZImagePickerController'        # Full version with all features      
+  #pod 'TZImagePickerController/Basic'  # No location code
 end
