@@ -38,3 +38,7 @@ passthroughSubject.sink { value in
 passthroughSubject.send(true)
 passthroughSubject.send(true)
 passthroughSubject.send(true)
+
+
+let str: String = " 2 2 3 "
+let astr = str.trimmingCharacters(in: .whitespaces)
