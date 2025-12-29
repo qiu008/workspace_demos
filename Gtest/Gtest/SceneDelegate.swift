@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  UIScene
+//  Gtest
 //
-//  Created by stl_ on 2025/8/13.
+//  Created by stl_ on 2025/12/8.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        debugPrint(#function)
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -25,70 +24,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
-        debugPrint(#function)
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
-        debugPrint(#function)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
-        debugPrint(#function)
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        debugPrint(#function)
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-        debugPrint(#function)
     }
 
-    func windowScene(_ windowScene: UIWindowScene, didUpdate previousCoordinateSpace: any UICoordinateSpace, interfaceOrientation previousInterfaceOrientation: UIInterfaceOrientation, traitCollection previousTraitCollection: UITraitCollection) {
-        debugPrint(#function)
-    }
 
-    func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-        debugPrint(#function)
-    }
-    
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        debugPrint(#function)
-    }
-    
-    func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? {
-        debugPrint(#function)
-        return nil
-    }
-    
-    func scene(_ scene: UIScene, restoreInteractionStateWith stateRestorationActivity: NSUserActivity) {
-        debugPrint(#function)
-    }
-    
-    func scene(_ scene: UIScene, willContinueUserActivityWithType userActivityType: String) {
-        debugPrint(#function)
-    }
-    
-    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        debugPrint(#function)
-    }
-    
-    func scene(_ scene: UIScene, didFailToContinueUserActivityWithType userActivityType: String, error: any Error) {
-        debugPrint(#function)
-    }
-    
-    func scene(_ scene: UIScene, didUpdate userActivity: NSUserActivity) {
-        debugPrint(#function)
-    }
-    
 }
 
